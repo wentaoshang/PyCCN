@@ -15,6 +15,7 @@
 #include <openssl/err.h>
 
 #include "pyccn.h"
+#include "util.h"
 #include "key_utils.h"
 #include "methods.h"
 #include "methods_contentobject.h"
@@ -24,7 +25,6 @@
 #include "methods_name.h"
 #include "methods_signature.h"
 #include "methods_signedinfo.h"
-#include "util.h"
 
 #if PY_MAJOR_VERSION >= 3
 #    define INITERROR return NULL

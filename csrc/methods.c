@@ -9,6 +9,7 @@
 #include <ccn/ccn.h>
 
 #include "pyccn.h"
+#include "util.h"
 #include "key_utils.h"
 #include "methods.h"
 #include "methods_contentobject.h"
@@ -16,7 +17,6 @@
 #include "methods_key.h"
 #include "methods_signedinfo.h"
 #include "objects.h"
-#include "util.h"
 
 
 // Registering callbacks
