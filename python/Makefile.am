@@ -8,3 +8,5 @@ pyccn_PYTHON = \
 	pyccn/Key.py \
 	pyccn/Name.py \
 	pyccn/CCN.py
+
+pyccn_PYTHON += pyccn/NameCrypto.py
