@@ -9,7 +9,8 @@ pyccn_PYTHON = \
 	pyccn/Interest.py \
 	pyccn/Key.py \
 	pyccn/Name.py \
-	pyccn/Repository.py
+	pyccn/Repository.py \
+	pyccn/utils.py
 
 pyccn_PYTHON += pyccn/NameCrypto.py
 
