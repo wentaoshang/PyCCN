@@ -12,8 +12,6 @@
 #include <ccn/uri.h>
 #include <ccn/signing.h>
 
-#include <openssl/err.h>
-
 #include "pyccn.h"
 #include "util.h"
 #include "key_utils.h"
@@ -277,8 +275,7 @@ MODINIT(_pyccn)
 
 	initialize_exceptions();
 
-	/* needed so openssl's errors make sense to humans */
-	ERR_load_crypto_strings();
+	initialize_crypto();
 
 #if PY_MAJOR_VERSION >= 3
 	return _pyccn_module;
