@@ -1,4 +1,5 @@
 pyccndir = $(PYTHON_SITE_PKG)/pyccn
+pyccnimpldir = $(pyccndir)/impl
 #pyccnstagingdir = $(pyccndir)/staging
 
 pyccn_PYTHON = \
@@ -13,6 +14,12 @@ pyccn_PYTHON = \
 	pyccn/utils.py
 
 pyccn_PYTHON += pyccn/NameCrypto.py
+
+pyccnimpl_PYTHON = \
+	pyccn/impl/__init__.py \
+	pyccn/impl/ccnb.py \
+	pyccn/impl/enumeration.py \
+	pyccn/impl/segmenting.py
 
 #pyccnstaging_PYTHON = \
 #	pyccn/staging/__init__.py \
